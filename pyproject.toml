@@ -4,4 +4,37 @@ version = "0.1.0"
 description = "Add your description here"
 readme = "README.md"
 requires-python = ">=3.12"
-dependencies = []
+dependencies = [
+    "mcp[cli]>=1.9.4",
+]
+
+[dependency-groups]
+dev = [
+    "mypy>=1.16.1",
+    "pytest>=8.4.1",
+    "ruff>=0.12.0",
+]
+
+[tool.ruff]
+target-version = "py312"
+line-length = 88
+
+[tool.isort]
+profile = "black"
+line_length = 88
+
+[tool.ruff.lint]
+preview = true
+# "I" = imports are sorted (following isort rules above)
+# "PLC0415" = all imports must be at top of the file, imports within functions are not allowed
+extend-select = ["I", "PLC0415"]
+
+[tool.mypy]
+python_version = "3.12"
+strict = true
+ignore_missing_imports = true
+incremental = false
+exclude = '^(\.venv)/'
+
+[tool.pytest.ini_options]
+asyncio_default_fixture_loop_scope = "function"
