@@ -1,0 +1,26 @@
+# EditorConfig is awesome: https://EditorConfig.org
+
+# top-most EditorConfig file
+root = true
+
+# Unix-style newlines with a newline ending every file
+[*]
+end_of_line = lf
+insert_final_newline = true
+charset = utf-8
+trim_trailing_whitespace = true
+
+# Python files
+[*.py]
+indent_style = space
+indent_size = 4
+max_line_length = 88  # Black formatter default
+ensure_newline_before_comments = true
+include_trailing_comma = true
+force_grid_wrap = 0
+use_parentheses = true
+
+# Configuration files (YAML, JSON, etc)
+[*.{yml,yaml,json}]
+indent_style = space
+indent_size = 2

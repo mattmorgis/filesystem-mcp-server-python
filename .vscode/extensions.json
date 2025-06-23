@@ -1,0 +1,18 @@
+{
+  "recommendations": [
+    "editorconfig.editorconfig",
+    "ms-python.python",
+    "ms-python.debugpy",
+    "ms-python.vscode-pylance",
+    "charliermarsh.ruff",
+    "ms-python.mypy-type-checker",
+    "ms-azuretools.vscode-docker",
+    "tamasfe.even-better-toml",
+    "mechatroner.rainbow-csv",
+    "richie5um2.vscode-sort-json",
+    "redhat.vscode-xml",
+    "redhat.vscode-yaml",
+    "github.vscode-github-actions",
+    "bierner.markdown-mermaid"
+  ]
+}
