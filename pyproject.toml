@@ -12,6 +12,7 @@ dependencies = [
 dev = [
     "mypy>=1.16.1",
     "pytest>=8.4.1",
+    "pytest-asyncio>=1.0.0",
     "ruff>=0.12.0",
 ]
 
@@ -37,4 +38,4 @@ incremental = false
 exclude = '^(\.venv)/'
 
 [tool.pytest.ini_options]
-asyncio_default_fixture_loop_scope = "function"
+asyncio_mode = "auto"
